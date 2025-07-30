@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftNova</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo"> SoftNova </a>
+
+          <!-- Toggle Button (Mobile) -->
+          <button class="menu-toggle" id="menuToggle">☰</button>
+
+          <!-- Navigation Menu -->
+          <div class="menu" id="mobileMenu">
+            <ul class="menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Reused login and demo button (only shown in mobile view by CSS) -->
+            <div class="auth-buttons mobile-auth">
+              <button class="cta-btn">Get a demo</button>
+              <a href="login.html" target="_blank" class="login-button"
+                ><i class="fas fa-user"></i> Log in</a
+              >
+            </div>
+          </div>
+          <!-- Reused login and demo button (only shown in desktop view by CSS) -->
+          <div class="auth-buttons desktop-auth">
+            <button class="cta-btn">Get a demo</button>
+            <a href="login.html" target="_blank" class="login-button"
+              ><i class="fas fa-user"></i> Log in</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content_container">
+      <section class="hero">
+        <article class="hero-content">
+          <h1>Discover the Future of Design</h1>
+          <p>
+            Our platform helps you create stunning visuals, streamline your
+            workflow, and bring your creative ideas to life effortlessly.
+          </p>
+          <button class="cta-btn">Get Started</button>
+        </article>
+        <figure class="hero-image">
+          <img src="../product-website/peoples.jpg" alt="Design Illustration" />
+        </figure>
+      </section>
+      <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-item">Feature 1</div>
+        <div class="feature-item">Feature 2</div>
+        <div class="feature-item">Feature 3</div>
+        <div class="feature-item">Feature 4</div>
+        <div class="feature-item">Feature 5</div>
+      </section>
+      <section class="gallery">
+        <h2>Products</h2>
+        <img
+          src="../product-website/software_launch_img_1.png"
+          alt="Gallery image 1"
+        />
+        <img
+          src="../product-website/software_launch_img_2.png"
+          alt="Gallery image 2"
+        />
+        <img
+          src="../product-website/software_launch_img_3.png"
+          alt="Gallery image 3"
+        />
+        <img
+          src="../product-website/software_launch_img_4.png"
+          alt="Gallery image 4"
+        />
+        <img
+          src="../product-website/software_launch_img_5.png"
+          alt="Gallery image 5"
+        />
+        <img
+          src="../product-website/software_launch_img_6.png"
+          alt="Gallery image 6"
+        />
+      </section>
+      <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+          <p>"This service is amazing!"</p>
+          <cite>- John Doe</cite>
+        </div>
+        <div class="testimonial">
+          <p>"This service is amazing!"</p>
+          <cite>- John Doe</cite>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Incredible experience from start to finish. Highly recommended!"
+          </p>
+          <cite>- Sarah Mitchell</cite>
+        </div>
+
+        <div class="testimonial">
+          <p>"Very intuitive and easy to use. Saved me so much time!"</p>
+          <cite>- Ankit Sharma</cite>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <a href="index.html" class="footer-logo-link">
+            <div class="logo">SoftNova</div>
+          </a>
+
+          <ul class="footer-links">
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <span class="footer-copy">
+            © 2025 <a href="">SoftNova</a>. All Rights Reserved.
+          </span>
+          <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank">
+              <i class="fab fa-github"></i></a
+            ><a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.getElementById("menuToggle");
+      const menu = document.getElementById("mobileMenu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

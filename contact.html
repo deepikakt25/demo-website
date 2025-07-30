@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftNova</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo"> SoftNova </a>
+
+          <!-- Toggle Button (Mobile) -->
+          <button class="menu-toggle" id="menuToggle">☰</button>
+
+          <!-- Navigation Menu -->
+          <div class="menu" id="mobileMenu">
+            <ul class="menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Reused login and demo button (only shown in mobile view by CSS) -->
+            <div class="auth-buttons mobile-auth">
+              <button class="cta-btn">Get a demo</button>
+              <a href="login.html" target="_blank" class="login-button"
+                ><i class="fas fa-user"></i> Log in</a
+              >
+            </div>
+          </div>
+          <!-- Reused login and demo button (only shown in desktop view by CSS) -->
+          <div class="auth-buttons desktop-auth">
+            <button class="cta-btn">Get a demo</button>
+            <a href="login.html" target="_blank" class="login-button"
+              ><i class="fas fa-user"></i> Log in</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content_container">
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or want to discuss a project? Reach out, and let's
+          craft the perfect solution for your unique business need.
+        </p>
+        <form action="submit_form.php" method="post">
+          <div class="name-row">
+            <label for="firstname" class="sr-only">First Name</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+            <label for="lastname" class="sr-only">Last Name</label>
+            <input
+              id="lastname"
+              type="text"
+              name="lastname"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <label for="email" class="sr-only">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <label for="phonenumber" class="sr-only">Phone Number</label>
+          <input
+            id="phonenumber"
+            type="phonenumber"
+            name="phonenumber"
+            placeholder="Phone Number"
+            required
+          />
+          <label for="message" class="sr-only">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+          <div class="text">We'll get back to you in 1-2 business days.</div>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <a href="index.html" class="footer-logo-link">
+            <div class="logo">SoftNova</div>
+          </a>
+
+          <ul class="footer-links">
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <span class="footer-copy">
+            © 2025 <a href="">SoftNova</a>. All Rights Reserved.
+          </span>
+          <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank">
+              <i class="fab fa-github"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.getElementById("menuToggle");
+      const menu = document.getElementById("mobileMenu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
