@@ -72,11 +72,15 @@ body {
 }
 
 .menu-list a {
-  display: block;
-  padding: 10px 0;
   color: #333;
   text-decoration: none;
-  transition: 0.2s;
+  padding: 10px 0;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.menu-list a:hover {
+  color: #491235 !important;
 }
 /* Common button layout */
 .auth-buttons {
