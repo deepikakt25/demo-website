@@ -80,7 +80,7 @@ body {
 }
 
 .menu-list a:hover {
-  color: #491235 !important;
+  color: #491235;
 }
 /* Common button layout */
 .auth-buttons {
